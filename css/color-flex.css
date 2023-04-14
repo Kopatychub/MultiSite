@@ -1,0 +1,125 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background: #4e4e4e;
+    user-select: none;
+}
+@font-face{
+    font-family: Downtown;
+    src: url('../fonts/Downtown.ttf');
+}
+@font-face{
+    font-family: Toyz;
+    src: url('../fonts/Toyz.ttf');
+}
+
+:root {
+    --none: #00000000;
+}
+
+ 
+#clr-flex {
+    position: absolute;
+    width: 48px;
+    height: 47px; 
+    left: 7px;
+}
+
+#clr-flex button {
+    background: url('../img/arrow64.png') -2px -1px;
+    background-size: 48px;
+    background-repeat: no-repeat;
+    rotate: 90deg;
+    width: 48px;
+    height: 47px;
+    border: none;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+#clr-flex button:hover{
+    transform: rotateZ(360deg);    
+}
+
+@keyframes qwe{
+    from{border: none;};
+    to{border-bottom:4px solid #a0a0a0;border-radius: 20px;}
+}
+.oncentre{
+    margin: 20px auto;
+    padding: 20px;
+    transition: .3s;
+    width: 626px;
+    height: 100px;
+    border-bottom:4px solid #a0a0a0;
+    border-radius: 20px;
+    animation: .5s qwe;
+}
+
+@keyframes btn{
+    0%{color: #00000000;};
+    100%{color: white}
+}
+.oncentre button{
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    height: 40px;
+    width: 116px;
+    margin: 3px;
+    border-radius: 10px;
+    transition: .2s;
+    border: none;
+    font-family: Downtown;
+    font-size: 15pt;
+    border-bottom:0px solid #a0a0a0;
+    animation: 1s btn;    
+}
+
+.oncentre button:hover {
+    box-shadow: 0 0 15px var(--btn-neon,cyan) ;
+}
+.oncentre:hover button{
+    border-bottom:5px solid #a0a0a0;
+}
+
+.color-box {
+    transition: .3s;    
+    margin: 141px auto;
+    height: 174px;
+    width:100%;
+    transition: .5s;
+}
+
+.color-box p {
+    text-align: center;
+    font-family: Toyz;
+    font-size: 100pt;
+}
+
+.secret{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0);
+    color: var(--none);
+    height: 43px;
+    width: 119px;
+    margin: 3px;
+    border-radius: 10px;
+    transition: .2s;
+    border: none;
+    font-family: Downtown;
+    font-size: 17pt;
+}
+
+.secret:hover {
+    color: white;
+    border-bottom: 5px solid #a0a0a0;
+}
+.secret:active {
+    transition: 0.05s;
+    border-bottom: 0px solid #a0a0a0;
+}
+
+
+ 

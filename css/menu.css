@@ -1,0 +1,63 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    height: 100%;
+}
+
+@font-face{
+    font-family: Downtown;
+    src: url('../fonts/Downtown.ttf');
+}
+
+
+:root {
+    --none: #00000000;
+}
+
+.menu-box {
+    background: url('../img/rock.jpg') no-repeat center center fixed;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.menu {
+    width: 677px;
+    margin: 0 auto;
+    position: relative;   
+}
+@keyframes qwe{
+    from{border: none;};
+    to{border-bottom:4px solid #a0a0a0;border-radius: 20px;}
+}
+
+.menu button{
+    transition: .5s;
+    color: var(--nene, white);
+    font-family: Downtown;
+    height: 80px; 
+    font-size: 45px;
+    border: none;
+    width: 280px;
+    margin: 38px 27px;
+    border-radius: 20px;
+    background: rgb(0, 0, 0,0);
+    animation: .5s qwe linear;
+    transition: .5s;    
+}
+.menu button:hover{
+    background: #000000ce;
+    /* border-bottom:6px solid #a0a0a0; */
+    box-shadow: 0 0 5px #ffffff42,
+                0 0 25px #ffffff42,
+                0 0 50px #ffffff42,
+                0 0 100px #ffffff42; 
+}
+
+#te {
+    color: #ff0000, #b700ff;
+}
